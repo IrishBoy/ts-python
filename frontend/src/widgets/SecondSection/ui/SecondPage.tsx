@@ -1,20 +1,16 @@
 import React from "react";
 
-interface SecondPageProps {
-  onNext: () => void;
-  onPrevious: () => void;
-}
-
-const SecondPage: React.FC<SecondPageProps> = ({ onNext, onPrevious }) => (
-  <div>
-    <h1>Second Page</h1>
-    <p>This is the content of the second page section.</p>
-    <button onClick={onPrevious}>
-      Previous
-    </button>
-    <button onClick={onNext}>
-      Next
-    </button>
+const SecondPage: React.FC<{ onNext: () => void; onPrevious: () => void }> = ({ onNext, onPrevious }) => (
+  <div className="full-page-section second-section">
+     <div className="button-back-container">
+      <button className="button-back" onClick={onPrevious}>Back</button>
+    </div>
+    <div className="text-container">
+    <h1 className="title">Second Page</h1>
+    </div>
+    <div className="button-next-container">
+      <button className="button-back" onClick={onNext}>When?</button>
+    </div>
   </div>
 );
 

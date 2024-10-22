@@ -1,20 +1,14 @@
 import React from "react";
 
-interface FirstPageProps {
-  onNext: () => void;
-  onPrevious: () => void;
-}
-
-const FirstPage: React.FC<FirstPageProps> = ({ onNext, onPrevious }) => (
-  <div>
-    <h1>First Page</h1>
-    <p>This is the content of the first page section.</p>
-    <button onClick={onPrevious} disabled>
-      Previous
-    </button> {/* Disabled since there's no section before */}
-    <button onClick={onNext}>
-      Next
-    </button>
+const FirstPage: React.FC<{ onNext: () => void }> = ({ onNext }) => (
+  <div className="full-page-section first-section">
+    <div className="text-container">
+      <h1 className="title">First Page</h1>
+      <p className="subtitle">We automate freelance</p>
+    </div>
+    <div className="button-container">
+      <button className="button" onClick={onNext}>How?</button>
+    </div>
   </div>
 );
 
