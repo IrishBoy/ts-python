@@ -1,0 +1,41 @@
+version: "3.8"
+services:
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "3000:3000"
+    environment:
+      REACT_APP_BACKEND_URL: http://backend:5000
+
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "8000:5000"
+    environment:
+      TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN}
+      TELEGRAM_CHAT_ID: ${TELEGRAM_CHAT_ID}
+      DB_HOST: db
+      DB_USER: ${DB_USER}
+      DB_PASS: ${DB_PASS}
+    
+  db:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASS}
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  migrations:
+    image: flyway/flyway
+    command: -url=jdbc:postgresql://db:5432/postgres -user=${DB_USER} -password=${DB_PASS} -connectRetries=60 migrate
+    volumes:
+      - ./migrations:/flyway/sql
+    depends_on:
+      - db
+
+volumes:
+  db_data:
