@@ -1,6 +1,6 @@
 import React from "react";
 
-const FirstPage: React.FC<{ onNext: () => void }> = ({ onNext }) => (
+const FirstPage: React.FC<{ onNext: () => void ; onPrevious: () => void}> = ({ onNext, onPrevious }) => (
   <div className="full-page-section first-section">
     <div className="text-container">
       <h1 className="title">First Page</h1>

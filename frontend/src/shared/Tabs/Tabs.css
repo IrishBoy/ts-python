@@ -1,0 +1,72 @@
+.tabs,
+.tabs * {
+  box-sizing: border-box;
+}
+.tabs {
+  border-radius: 50px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 1px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  height: 78px;
+  position: relative;
+  overflow: hidden;
+}
+.tab,
+.tab2 {
+  background-color: white; /* Default background */
+  color: yellow; /* Default text color for inactive */
+  border-radius: var(--var-sds-size-radius-100, 4px);
+  border-style: solid;
+  border-color: var(--var-sds-color-border-neutral-tertiary, #b2b2b2);
+  border-width: 0px 0px 1px 0px;
+  padding: var(--var-sds-size-space-100, 4px)
+    var(--var-sds-size-space-300, 12px) var(--var-sds-size-space-100, 4px)
+    var(--var-sds-size-space-300, 12px);
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+}
+
+.tab.active,
+.tab2.active {
+  background-color: pink; /* Background for active tab */
+  color: black; /* Text color for active tab */
+}
+/* .label {
+  color: var(--var-sds-color-text-neutral-default, #303030);
+  text-align: left;
+  font-family: var(--heading-font-family, "Inter-SemiBold", sans-serif);
+  font-size: var(--heading-font-size, 24px);
+  line-height: var(--heading-line-height, 120%);
+  letter-spacing: var(--heading-letter-spacing, -0.02em);
+  font-weight: var(--heading-font-weight, 600);
+  position: relative;
+}
+
+.label2 {
+  color: #ffffff;
+  text-align: left;
+  font-family: var(--heading-font-family, "Inter-SemiBold", sans-serif);
+  font-size: var(--heading-font-size, 24px);
+  line-height: var(--heading-line-height, 120%);
+  letter-spacing: var(--heading-letter-spacing, -0.02em);
+  font-weight: var(--heading-font-weight, 600);
+  position: relative;
+} */
+
+/* .tab.active {
+    background-color: #00f; 
+    color: #fff;
+  } */
+  
