@@ -1,0 +1,17 @@
+.avatar-group-property-1-api,
+.avatar-group-property-1-api * {
+  box-sizing: border-box;
+}
+.avatar-group-property-1-api {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+.avatar-group-property-1-api .avatar-group-instance {
+  flex-shrink: 0 !important;
+  width: 40px !important;
+  height: 40px !important;
+}

@@ -1,6 +1,15 @@
 import React, { Component } from "react";
-import { Tab, Tab2 } from "../../../shared/Tabs"  // Adjust the import path according to your project structure
-import "../../../shared/Tabs/Tabs.css";  // Ensure the CSS for styling tabs is imported
+import { Tab, Tab2 } from "../../../shared/Tabs"; // Adjust the import path according to your project structure
+import "../../../shared/Tabs/Tabs.css";
+import {CardGridReviews} from "../../../shared/CardGrid"; // Adjust path as necessary
+import SqlIcon from "../../../assets/sql.png";
+import ExcelIcon from "../../../assets/excel.png";
+import CsvIcon from "../../../assets/csv.png";
+import ApiIcon from "../../../assets/api.png";
+import FilesIcon from "../../../assets/files.png";
+import QueueIcon from "../../../assets/queue.png";
+import DoubleCheckIcon from "../../../assets/doubleCheck.png";
+import TimeIcon from "../../../assets/time.png";
 
 interface SecondPageProps {
   onNext: () => void;
@@ -15,7 +24,7 @@ class SecondPage extends Component<SecondPageProps, SecondPageState> {
   constructor(props: SecondPageProps) {
     super(props);
     this.state = {
-      activeTab: "left", // Default active tab
+      activeTab: "left",
     };
   }
 
@@ -26,6 +35,14 @@ class SecondPage extends Component<SecondPageProps, SecondPageState> {
   render() {
     const { onNext, onPrevious } = this.props;
     const { activeTab } = this.state;
+
+    const textSet = activeTab === "left"
+      ? [{ heading: "Define data", body: "Data modelMock data" }, { heading: "Define data222", body: "Data modelMock data" }]
+      : [{ heading: "Define criteria", body: "Inputs and outputsWay of interaction" }, { heading: "Define criteria2222", body: "Inputs and outputsWay of interaction" }];
+
+    const iconSet = activeTab === "left"
+      ? [[SqlIcon, ExcelIcon, CsvIcon], [SqlIcon, ExcelIcon, CsvIcon]]
+      : [[ApiIcon, FilesIcon, QueueIcon], [ApiIcon, FilesIcon, QueueIcon]];
 
     return (
       <div className="full-page-section second-section">
@@ -56,11 +73,7 @@ class SecondPage extends Component<SecondPageProps, SecondPageState> {
           </Tab2>
         </div>
         <div className="tab-content">
-          {activeTab === "left" ? (
-            <p>This is the content for the Left Tab.</p>
-          ) : (
-            <p>This is the content for the Right Tab.</p>
-          )}
+          <CardGridReviews className="custom-class" texts={textSet} icons={iconSet} />
         </div>
         <div className="button-next-container">
           <button className="button-back" onClick={onNext}>When?</button>

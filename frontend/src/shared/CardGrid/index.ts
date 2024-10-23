@@ -1,0 +1,1 @@
+export { CardGridReviews } from './CardGrid';

@@ -1,0 +1,45 @@
+.avatar-group-property-1-variant-2,
+.avatar-group-property-1-variant-2 * {
+  box-sizing: border-box;
+}
+.avatar-group-property-1-variant-2 {
+  width: 221px;
+  height: 40px;
+  position: relative;
+}
+.avatar-group-property-1-variant-2 .avatar-group-instance {
+  width: 18.1% !important;
+  height: 100% !important;
+  position: absolute !important;
+  right: 81.9% !important;
+  left: 0% !important;
+  bottom: 0% !important;
+  top: 0% !important;
+}
+.avatar-group-property-1-variant-2 .avatar-group-instance2 {
+  width: 18.1% !important;
+  height: 100% !important;
+  position: absolute !important;
+  right: 20.81% !important;
+  left: 61.09% !important;
+  bottom: 0% !important;
+  top: 0% !important;
+}
+.avatar-group-property-1-variant-2 .avatar-group-instance3 {
+  width: 18.1% !important;
+  height: 100% !important;
+  position: absolute !important;
+  right: 41.18% !important;
+  left: 40.72% !important;
+  bottom: 0% !important;
+  top: 0% !important;
+}
+.avatar-group-property-1-variant-2 .avatar-group-instance4 {
+  width: 18.1% !important;
+  height: 100% !important;
+  position: absolute !important;
+  right: 61.54% !important;
+  left: 20.36% !important;
+  bottom: 0% !important;
+  top: 0% !important;
+}

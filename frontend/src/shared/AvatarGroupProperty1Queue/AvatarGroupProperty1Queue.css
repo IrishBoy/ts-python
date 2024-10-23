@@ -1,0 +1,17 @@
+.avatar-group-property-1-queue,
+.avatar-group-property-1-queue * {
+  box-sizing: border-box;
+}
+.avatar-group-property-1-queue {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+.avatar-group-property-1-queue .avatar-group-instance {
+  flex-shrink: 0 !important;
+  width: 40px !important;
+  height: 40px !important;
+}
