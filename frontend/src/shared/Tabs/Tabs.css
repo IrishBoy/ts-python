@@ -14,13 +14,14 @@
   justify-content: flex-start;
   flex-shrink: 0;
   height: 78px;
+  width: 300px;
   position: relative;
   overflow: hidden;
 }
 .tab,
 .tab2 {
-  background-color: white; 
-  color: yellow; 
+  /* background-color: white;  */
+  color: white; 
   border-radius: var(--var-sds-size-radius-100, 4px);
   border-style: solid;
   border-color: var(--var-sds-color-border-neutral-tertiary, #b2b2b2);
@@ -40,7 +41,7 @@
 
 .tab.active,
 .tab2.active {
-  background-color: pink; /* Background for active tab */
+  background-color: white; /* Background for active tab */
   color: black; /* Text color for active tab */
 }
 

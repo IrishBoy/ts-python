@@ -184,7 +184,8 @@ body {
 }
 
  .second-section {
-  background-color: #add8e6;
+  /* background: linear-gradient(180deg #666 11.5%, #000 46%); */
+  background: linear-gradient(180deg,  #666 11.5%, #000 46%);
 }
 
 .third-section {
@@ -291,6 +292,10 @@ body {
 
 }
 
+.second-section .title{
+  color: white;
+}
+
 .second-section .tabs {
   top: 25%;
   position: absolute;
@@ -304,8 +309,10 @@ body {
   /* position: absolute; */
   display: flex;
   /* justify-content: center; */
-  width: 100%;
-  max-width: 800px;
+  /* width: 100%; */
+  /* max-width: 800px;
+   */
+  max-width: 90%;
   height: 30%;
   bottom: 30%;
 }

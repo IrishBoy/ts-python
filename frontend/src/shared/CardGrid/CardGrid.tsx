@@ -22,11 +22,11 @@ export const CardGridReviews: React.FC<CardGridReviewsProps> = ({ className = ''
               <TextHeading text={text.heading} className={`text-heading-instance${index}`} />
               <Text text={text.body} className="text-instance" />
             </div>
-            <div className="avatar-group">
+            {/* <div className="avatar-group">
               {icons[index].map((icon, iconIndex) => (
                 <img key={iconIndex} src={icon} alt={`Icon ${iconIndex}`} className={`avatar-group-instance${iconIndex}`} />
               ))}
-            </div>
+            </div> */}
           </div>
         ))}
       </div>

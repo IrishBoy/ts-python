@@ -37,12 +37,20 @@ class SecondPage extends Component<SecondPageProps, SecondPageState> {
     const { activeTab } = this.state;
 
     const textSet = activeTab === "left"
-      ? [{ heading: "Define data", body: "Data modelMock data" }, { heading: "Define data222", body: "Data modelMock data" }]
-      : [{ heading: "Define criteria", body: "Inputs and outputsWay of interaction" }, { heading: "Define criteria2222", body: "Inputs and outputsWay of interaction" }];
+      ? [{ heading: "Define data", body: "Data modelMock data" }, 
+          { heading: "Define data222", body: "Data modelMock data" }, 
+          { heading: "Define data222", body: "Data modelMock data" }]
+      : [{ heading: "Define criteria", body: "Inputs and outputsWay of interaction" }, 
+          { heading: "Define criteria2222", body: "Inputs and outputsWay of interaction" },
+          { heading: "Define criteria2222", body: "Inputs and outputsWay of interaction" }];
 
     const iconSet = activeTab === "left"
-      ? [[SqlIcon, ExcelIcon, CsvIcon], [SqlIcon, ExcelIcon, CsvIcon]]
-      : [[ApiIcon, FilesIcon, QueueIcon], [ApiIcon, FilesIcon, QueueIcon]];
+      ? [[SqlIcon, ExcelIcon, CsvIcon], 
+        [SqlIcon, ExcelIcon, CsvIcon], 
+        [SqlIcon, ExcelIcon, CsvIcon]]
+      : [[ApiIcon, FilesIcon, QueueIcon], 
+        [ApiIcon, FilesIcon, QueueIcon], 
+        [ApiIcon, FilesIcon, QueueIcon]];
 
     return (
       <div className="full-page-section second-section">
@@ -50,7 +58,7 @@ class SecondPage extends Component<SecondPageProps, SecondPageState> {
           <button className="button-back" onClick={onPrevious}>Back</button>
         </div>
         <div className="text-container">
-          <h1 className="title">Second Page</h1>
+          <h1 className="title">How does it work?</h1>
         </div>
         <div className="tabs">
           <Tab
@@ -60,7 +68,7 @@ class SecondPage extends Component<SecondPageProps, SecondPageState> {
             tabIndex={0}
             aria-pressed={activeTab === "left"}
           >
-            Left Tab
+            For a client
           </Tab>
           <Tab2
             className={`tab2 ${activeTab === "right" ? "active" : ""}`}
@@ -69,7 +77,7 @@ class SecondPage extends Component<SecondPageProps, SecondPageState> {
             tabIndex={0}
             aria-pressed={activeTab === "right"}
           >
-            Right Tab
+           For a freelancer
           </Tab2>
         </div>
         <div className="tab-content">
