@@ -249,7 +249,13 @@ body {
 }
 
 
-
+.second-section .button-back-container {
+  top: 15%;
+  height: 3%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
 .second-section .button-back {
   border-radius: 40px;
   padding: 10px 20px;
@@ -261,12 +267,7 @@ body {
   color: white
 }
 
-.second-section .button-back-container {
-  top: 10%;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
+
 
 .second-section .button-next-container {
   bottom: 5%;
@@ -275,12 +276,39 @@ body {
   /* gap: 10px; */
 }
 
+.second-section .text-container{
+  position: absolute;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10%;
+  height: 15%;
+}
+
+.second-section .title{
+  color: white;
+}
+
+
 .second-section .tabs {
   display: flex;
   justify-content: center;
-  margin: 5%;
-  position: absolute;
+  margin-top: 15%;
+  margin-bottom: 1%;
+  height: 8%;
 }
+
+.second-section .tab-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  max-height: 50%; 
+  overflow-y: auto; 
+  padding: 1%;
+  box-sizing: border-box;
+}
+
 
 .second-section .button-next {
   border-radius: 40px;
@@ -292,27 +320,4 @@ body {
   color: linear-gradient(180deg, #000 0%, #666 100%);
   color: white
 }
-.second-section .text-container{
-  position: absolute;
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  /* top:15%; */
-  margin: 10%;
 
-}
-
-.second-section .title{
-  color: white;
-}
-
-.second-section .tab-content {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-  max-height: 60vh; 
-  overflow-y: auto; 
-  padding: 10px;
-  box-sizing: border-box;
-}

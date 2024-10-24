@@ -20,7 +20,6 @@
 }
 .tab,
 .tab2 {
-  /* background-color: white;  */
   color: white; 
   border-radius: var(--var-sds-size-radius-100, 4px);
   border-style: solid;
