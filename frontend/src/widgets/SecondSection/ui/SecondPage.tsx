@@ -37,12 +37,12 @@ class SecondPage extends Component<SecondPageProps, SecondPageState> {
     const { activeTab } = this.state;
 
     const textSet = activeTab === "left"
-      ? [{ heading: "Define data", body: "Data modelMock data" }, 
-          { heading: "Define data222", body: "Data modelMock data" }, 
-          { heading: "Define data222", body: "Data modelMock data" }]
-      : [{ heading: "Define criteria", body: "Inputs and outputsWay of interaction" }, 
-          { heading: "Define criteria2222", body: "Inputs and outputsWay of interaction" },
-          { heading: "Define criteria2222", body: "Inputs and outputsWay of interaction" }];
+      ? [{ heading: "Define data", body: ["Data model", "Mock data"] }, 
+          { heading: "Define data222", body: ["Data model", "Mock data"] }, 
+          { heading: "Define data222", body: ["Data model", "Mock data"] }]
+      : [{ heading: "Define criteria", body: ["Inputs and outputs", "Way of interaction"] }, 
+          { heading: "Define criteria2222", body: ["Inputs and outputs", "Way of interaction"] },
+          { heading: "Define criteria2222", body: ["Inputs and outputs", "Way of interaction"] }];
 
     const iconSet = activeTab === "left"
       ? [[SqlIcon, ExcelIcon, CsvIcon], 

@@ -183,8 +183,12 @@ body {
   background: linear-gradient(0deg, #666 0%, #000 46%);
 }
 
- .second-section {
-  /* background: linear-gradient(180deg #666 11.5%, #000 46%); */
+.second-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh; /* Ensures the second section takes the full viewport height */
+  overflow: hidden; /* Prevents content from overflowing outside the section */
   background: linear-gradient(180deg,  #666 11.5%, #000 46%);
 }
 
@@ -244,14 +248,7 @@ body {
   color: white
 }
 
-.second-section .button-back-container{
-  position: absolute;
-  border-radius: 40px;
-  top: 10%;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
+
 
 .second-section .button-back {
   border-radius: 40px;
@@ -264,13 +261,25 @@ body {
   color: white
 }
 
-.second-section .button-next-container{
-  position: absolute;
-  border-radius: 40px;
-  bottom: 5%;
+.second-section .button-back-container {
+  top: 10%;
   display: flex;
   justify-content: center;
   gap: 10px;
+}
+
+.second-section .button-next-container {
+  bottom: 5%;
+  display: flex;
+  justify-content: center;
+  /* gap: 10px; */
+}
+
+.second-section .tabs {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+  position: absolute;
 }
 
 .second-section .button-next {
@@ -288,7 +297,8 @@ body {
   text-align: center;
   font-size: 24px;
   font-weight: bold;
-  top:15%;
+  /* top:15%; */
+  margin: 10%;
 
 }
 
@@ -296,23 +306,13 @@ body {
   color: white;
 }
 
-.second-section .tabs {
-  top: 25%;
-  position: absolute;
-  display: flex;
-
-}
-
-
-
 .second-section .tab-content {
-  /* position: absolute; */
   display: flex;
-  /* justify-content: center; */
-  /* width: 100%; */
-  /* max-width: 800px;
-   */
-  max-width: 90%;
-  height: 30%;
-  bottom: 30%;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  max-height: 60vh; 
+  overflow-y: auto; 
+  padding: 10px;
+  box-sizing: border-box;
 }

@@ -1,7 +1,9 @@
 .card-grid-reviews,
 .card-grid-reviews * {
   box-sizing: border-box;
+
 }
+
 .card-grid-reviews {
   border-radius: 40px;
   border-style: solid;
@@ -14,6 +16,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   position: relative;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 .card-grid-reviews .card-grid {
   display: flex;
@@ -27,6 +30,7 @@
   align-self: stretch;
   flex-shrink: 0;
   position: relative;
+  color: white;
 }
 .card-grid-reviews .review-card {
   border-radius: var(--var-sds-size-radius-200, 8px);
@@ -42,6 +46,8 @@
   flex: 1;
   min-width: 240px;
   position: relative;
+  color: white;
+  box-sizing: border-box;
 }
 .card-grid-reviews .review-body {
   display: flex;
@@ -56,6 +62,7 @@
 .card-grid-reviews .text-heading-instance {
   flex-shrink: 0 !important;
   width: 305px !important;
+  color: white;
 }
 .card-grid-reviews .text-instance {
   align-self: stretch !important;
@@ -67,42 +74,17 @@
 .card-grid-reviews .text-heading-instance2 {
   flex-shrink: 0 !important;
   width: 304px !important;
+  color: white;
 }
 
-/* nested override styles */
-.card-grid-reviews .avatar-group-instance2 {
-  width: 18.1% !important;
-  height: 100% !important;
-  position: absolute !important;
-  right: 20.81% !important;
-  left: 61.09% !important;
-  bottom: 0% !important;
-  top: 0% !important;
+.avatar-group {
+  display: flex;
+  gap: 10px; 
 }
-.card-grid-reviews .avatar-group-instance3 {
-  width: 18.1% !important;
-  height: 100% !important;
-  position: absolute !important;
-  right: 41.18% !important;
-  left: 40.72% !important;
-  bottom: 0% !important;
-  top: 0% !important;
-}
-.card-grid-reviews .avatar-group-instance4 {
-  width: 18.1% !important;
-  height: 100% !important;
-  position: absolute !important;
-  right: 61.54% !important;
-  left: 20.36% !important;
-  bottom: 0% !important;
-  top: 0% !important;
-}
-.card-grid-reviews .avatar-group-instance5 {
-  width: 18.1% !important;
-  height: 100% !important;
-  position: absolute !important;
-  right: 81.9% !important;
-  left: 0% !important;
-  bottom: 0% !important;
-  top: 0% !important;
+
+.avatar-group img {
+  width: 40px; 
+  height: 40px;
+  object-fit: cover; 
+  border-radius: 50%;
 }
