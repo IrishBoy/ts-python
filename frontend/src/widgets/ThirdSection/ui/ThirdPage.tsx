@@ -8,28 +8,33 @@ interface ThirdPageProps {
 
 const roadmapSteps = [
   {
-    label: "Step 1",
-    title: "Registration",
+    label: "End 2024",
+    name:"dsd",
+    title: "Prototype",
     points: ["Create account", "Verify email", "Complete profile"]
   },
   {
-    label: "Step 2",
-    title: "Discovery",
+    label: "Late Q1 2025",
+    name:"dsd",
+    title: "Raise",
     points: ["Browse services", "Compare options", "Read reviews"]
   },
   {
-    label: "Step 3",
-    title: "Connection",
+    label: "Late Q3 2025",
+    name:"dsd",
+    title: "Beta",
     points: ["Contact provider", "Discuss details", "Get quote"]
   },
   {
-    label: "Step 4",
-    title: "Execution",
+    label: "End 2025",
+    name:"dsd",
+    title: "Release",
     points: ["Start project", "Track progress", "Provide feedback"]
   },
   {
-    label: "Step 5",
-    title: "Completion",
+    label: "Q1 2026",
+    name:"dsd",
+    title: "Work",
     points: ["Review work", "Release payment", "Leave review"]
   }
 ];
@@ -50,11 +55,11 @@ const ThirdPage: React.FC<ThirdPageProps> = ({ onNext, onPrevious }) => {
               <div className="circle-container">
                 <div className="circle-bg" />
                 <div className="circle-border">
-                  <span className="circle-text">Etap</span>
+                  <span className="circle-text">{step.title}</span>
                 </div>
               </div>
               <div className="text-center px-2">
-                <h3 className="step-title">{step.title}</h3>
+                {/* <h3 className="step-title">{step.title}</h3> */}
                 <ul className="step-list">
                   {step.points.map((point, i) => (
                     <li key={i} className="step-item">{point}</li>

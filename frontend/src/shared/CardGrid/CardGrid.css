@@ -6,10 +6,10 @@
 
 .card-grid-reviews {
   border-radius: 40px;
-  border-style: solid;
+  /* border-style: solid; */
   border-color: #ffffff;
   border-width: 1px;
-  padding: 64px;
+  /* padding: 64px; */
   display: flex;
   flex-direction: column;
   gap: 48px ;
