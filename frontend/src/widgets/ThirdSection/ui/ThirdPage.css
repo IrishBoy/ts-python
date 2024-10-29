@@ -1,0 +1,104 @@
+
+.container {
+    max-width: 64rem;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+  }
+  
+
+  .line-container {
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+  .line {
+    position: absolute;
+    top: 32.5%;
+    left: 2.5rem;
+    right: 2.5rem;
+    height: 0.25rem;
+    background-color: #666; 
+    z-index: 0;
+  }
+  
+
+  .step-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2.5rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 12rem;
+  }
+  
+
+  .circle-container {
+    position: relative;
+    margin-bottom: 2rem;
+    z-index: 2;
+  }
+  
+  .circle-bg {
+    width: 7rem;
+    height: 7rem;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+    position: relative;
+  }
+  
+  .circle-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+  }
+  
+  .circle-text {
+    font-size: 2;
+    font-weight: 500;
+    color: #666;
+  }
+  
+  .step-title {
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #d9e3ff; 
+  }
+  
+  .step-list {
+    font-size: 0.875rem;
+    color: #b0b7c3;
+  }
+  
+  .step-item {
+    color: #b0b7c3;
+  }
+  
+
+  .step-label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #d9e3ff;
+    margin-bottom: 0.5rem;
+  }

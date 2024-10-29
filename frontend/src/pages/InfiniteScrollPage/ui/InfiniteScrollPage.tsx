@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { FirstPage } from "../../../widgets/FirstSection";
 import { SecondPage } from "../../../widgets/SecondSection";
 import { ThirdPage } from "../../../widgets/ThirdSection";
+import { ForthPage } from "../../../widgets/ForthSection";
 import './InfiniteScrollPage.css'; // Import the CSS file for styling
 
 const InfiniteScrollPage: React.FC = () => {
@@ -18,7 +19,7 @@ const InfiniteScrollPage: React.FC = () => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             const newSection = visibleSections.length + 1;
-            if (newSection <= 3) {
+            if (newSection <= 4) {
               setVisibleSections((prevSections) => [...prevSections, newSection]);
             }
           }
@@ -51,7 +52,12 @@ const InfiniteScrollPage: React.FC = () => {
       )}
       {visibleSections.includes(3) && (
         <section id="section-3" className="full-page-section">
-          <ThirdPage onNext={() => scrollToSection(3)} onPrevious={() => scrollToSection(2)} />
+          <ThirdPage onNext={() => scrollToSection(4)} onPrevious={() => scrollToSection(2)} />
+        </section>
+      )}
+      {visibleSections.includes(4) && (
+        <section id="section-4" className="full-page-section">
+          <ForthPage onNext={() => scrollToSection(4)} onPrevious={() => scrollToSection(3)} />
         </section>
       )}
     </div>

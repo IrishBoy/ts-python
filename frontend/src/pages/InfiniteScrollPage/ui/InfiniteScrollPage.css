@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: 'Hero New Regular';
   font-style: normal;
@@ -187,8 +186,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh; /* Ensures the second section takes the full viewport height */
-  overflow: hidden; /* Prevents content from overflowing outside the section */
+  height: 100vh; 
+  overflow: hidden; 
   background: linear-gradient(180deg,  #666 11.5%, #000 46%);
 }
 
@@ -250,11 +249,12 @@ body {
 
 
 .second-section .button-back-container {
-  top: 15%;
+  top: 5%;
   height: 3%;
   display: flex;
   justify-content: center;
-  gap: 10px;
+  position: relative;
+  /* gap: 10px; */
 }
 .second-section .button-back {
   border-radius: 40px;
@@ -274,6 +274,7 @@ body {
   display: flex;
   justify-content: center;
   /* gap: 10px; */
+  position: relative;
 }
 
 .second-section .text-container{
